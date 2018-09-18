@@ -1,0 +1,15 @@
+
+   <form class="form-signin align-content-center">
+      <h2 class="form-signin-heading company-name">STATUS</h2>
+      <h3 class="form-signin-heading login-block-header">Панель администратора</h3>
+      <label for="inputEmail" class="sr-only">Email address</label>
+         <input name="email" [(ngModel)] = "user.username" type="email" id="inputEmail" class="form-control" placeholder="Логин" required autofocus>
+         <label for="inputPassword" class="sr-only">Password</label>
+         <input name="password" [(ngModel)] = "user.password" type="password" id="inputPassword" class="form-control" placeholder="Пароль" required>
+         <div class="checkbox">
+           <!--<label>
+             <input type="checkbox" value="remember-me"> Remember me
+           </label>-->
+         </div>
+     <button class="btn btn-lg btn-primary btn-block" (click)="validateLogin();" type="button">Войти</button>
+ </form>
