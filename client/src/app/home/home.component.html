@@ -6,35 +6,26 @@
             <nav class="align-items-center">
                 <ul class="nav nav-pills flex-column float-left ">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Услуги <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" routerLink="./services" >Услуги <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Тренинги</a>
+                        <a class="nav-link"routerLink="./trainings">Тренинги</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Блог</a>
+                        <a class="nav-link" routerLink="./blog" active >Блог</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Отзывы</a>
+                        <a class="nav-link" routerLink="./reviews">Отзывы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Выход</a>
+                        <a class="nav-link" routerLink="/">Выход</a>
                     </li>
                 </ul>
             </nav>
         </menu>
 
         <div class="col content-block">
-            <header class="header clearfix no-margin">
-                <h3 class="text-muted ">Angular Blog App (Название текущего раздела)</h3>
-            </header>
-            <main role="main" class="main-content-block">
-                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal">
-                    Add post
-                </button>
-
-                <app-show-post></app-show-post>
-            </main>
+                <router-outlet></router-outlet>
         </div>
     </div>
 </div>

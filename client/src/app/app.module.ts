@@ -6,9 +6,11 @@ import { ROUTING } from './app.routing';
 import {LoginComponent} from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
-import { ShowPostComponent } from './show-post/show-post.component';
+import { ShowPostComponent } from './home/posts/show-post/show-post.component';
 import { AddPostComponent } from './add-post/add-post.component';
-
+import { TrainingsComponent } from './home/trainings/trainings.component'
+import { ReviewsComponent } from './home/reviews/reviews.component';
+import { ServicesComponent } from './home/services/services.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,10 @@ import { AddPostComponent } from './add-post/add-post.component';
     LoginComponent,
     HomeComponent,
     ShowPostComponent,
-    AddPostComponent
+    AddPostComponent,
+    TrainingsComponent,
+    ReviewsComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,

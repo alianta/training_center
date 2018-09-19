@@ -19,12 +19,12 @@ app.get('/api/user/login', (req, res) => {
 })
 app.post('/api/user/login', (req, res) => {
 	
-	const user = req.username;
-	const pass = req.password;
+	const user = req.body.username;
+	const pass = req.body.password;
 	
-	console.log("req.username="+req.username);
-	console.log("req.password="+req.password);
-	console.log("req="+toString(req)); 
+	console.log("req.username="+user);
+	console.log("req.password="+pass);
+	console.log("req="+toString(req.body)); 
 	if(/*user.length === 1&&*/user==="user"&&pass==="123"){	
 		return res.status(200).json({
 			status: 'success',
