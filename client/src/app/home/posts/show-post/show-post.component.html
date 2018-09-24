@@ -1,121 +1,50 @@
 <header class="header clearfix no-margin">
-    <h3 class="text-muted "> БЛОГ </h3>
+  <h3 class="text-muted "> БЛОГ </h3>
 </header>
 
-<button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal">
-    Add post
+<button #addPost type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
+  Add post
 </button>
+<app-add-post></app-add-post>
+
 <div class="list-group">
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+  <div *ngFor="let post of posts" class="list-group-item list-group-item-action flex-column align-items-start">
     <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Блок статья 1</h5>
-      <small>3 days ago</small>
-    </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small>Donec id elit non mi porta.</small>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">List group item heading</h5>
-      <small class="text-muted">3 days ago</small>
-    </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small class="text-muted">Donec id elit non mi porta.</small>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">List group item heading</h5>
-      <small class="text-muted">3 days ago</small>
-    </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small class="text-muted">Donec id elit non mi porta.</small>
-  </a>
-
-
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">List group item heading</h5>
-      <small>3 days ago</small>
-    </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small>Donec id elit non mi porta.</small>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">List group item heading</h5>
-      <small class="text-muted">3 days ago</small>
-    </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small class="text-muted">Donec id elit non mi porta.</small>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">List group item heading</h5>
-      <small class="text-muted">3 days ago</small>
-    </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small class="text-muted">Donec id elit non mi porta.</small>
-  </a>
-
-
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">List group item heading</h5>
-      <small>3 days ago</small>
-    </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small>Donec id elit non mi porta.</small>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">List group item heading</h5>
-      <small class="text-muted">3 days ago</small>
-    </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small class="text-muted">Donec id elit non mi porta.</small>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">List group item heading</h5>
-      <small class="text-muted">3 days ago</small>
-    </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small class="text-muted">Donec id elit non mi porta.</small>
-  </a>
-
-
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">List group item heading</h5>
-      <small>3 days ago</small>
-    </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small>Donec id elit non mi porta.</small>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">List group item heading</h5>
-      <small class="text-muted">3 days ago</small>
-    </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small class="text-muted">Donec id elit non mi porta.</small>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">List group item heading</h5>
-      <small class="text-muted">3 days ago</small>
-    </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small class="text-muted">Donec id elit non mi porta.</small>
-  </a>
-<!--
-  <a *ngFor="let post of posts" href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
+      <img class="img-fluid post-image" src="../../../../assets/{{post.image}}" alt="">
+      <div class="w-100 ">
+        <div class="d-flex w-100 justify-content-between">
           <h5 class="mb-1">{{post.title}}</h5>
-          <small>3 days ago</small>
+          <small>{{post.date}}</small>
+        </div>
+        <div class="d-flex w-100 justify-content-end">
+          <button type="button" title="Edit" (click)="editPost(post)" class="btn btn-outline-primary btn-sm">Редактировать</button>
+          <button type="button" title="Delete" (click)="setDelete(post)" data-toggle="modal" data-target="#deleteModal"
+            class="btn btn-outline-danger btn-sm">Удалить</button>
+        </div>
       </div>
-      <p class="mb-1">{{post.description}}</p>
-      <small>read more...</small>
-  </a>
--->
+    </div>
+  </div>
+
+</div>
+
+
+<!-- Confirm modal-->
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Удаление статьи</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Вы уверы, что хотите удалить статью?
+      </div>
+      <div class="modal-footer">
+        <button #closeBtn (click)="unsetDelete()" type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+        <button type="button" class="btn btn-primary" (click)="deletePost()">Удалить</button>
+      </div>
+    </div>
+  </div>
 </div>

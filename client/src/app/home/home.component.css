@@ -75,7 +75,7 @@
 
 
 .sidebar{
-  background-color: black;
+  background-color: #22262f;
   border-right: 0.5rem solid #c94155;
   height: 100vh;
   min-width: 170px;
@@ -87,9 +87,13 @@
   height: 100vh;
   overflow: auto;
 }
-.nav-link{
+.btn-link{
   padding-left: 30px;
 }
+.nav-item:hover{
+  background-color: #343844;
+}
+
 .nav-pills{
   width: 100%;
 }
@@ -98,4 +102,9 @@
   text-align: center;
   padding: 20px 0;
   border-bottom: 1px solid darkgray;
+  height: 80px;
+  font-weight: 800;
+}
+.nav-item-link{
+  color: white;
 }

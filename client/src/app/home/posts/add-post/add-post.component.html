@@ -1,0 +1,61 @@
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Новая статья</h5>
+                <button type="button" #closeBtn class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Название статьи:</label>
+                        <input type="text" [(ngModel)]="post.title" name="title" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" placeholder="Enter title">
+                    </div>
+                    <div class="form-group">
+                            <label for="exampleInputFile">Изображение:</label>
+                            <img src="" alt="тут надо картинку втставить посие загрузки">
+                            <input type="file" name="imageFile">
+                    </div>
+                   <!-- <div class="form-group">
+                        <label for="exampleInputCategory">Категория:</label>
+                        <select name="category" [(ngModel)]="post.category" class="form-control" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>-->
+                    <div class="form-group">
+                        <label for="blogCategory">Категория статьи:</label>
+                        <ng-select  name="selectCategory"
+                            [items]="allCategories" 
+                            bindLabel="name" 
+                            bindValue="name" 
+                            [addTag]="addNewCategory" 
+                            [hideSelected] = "true"
+                            [multiple]="true"
+                            placeholder="Select user or add custom tag" 
+                            [(ngModel)]="post.category"> 
+
+                        </ng-select>
+                        <!--  <input type="file"[(ngModel)]="post.image" name="image"  class="form-control-file" id="exampleInputFile">
+                      -->
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Текст статьи</label>
+                        <div [froalaEditor] name="description" [(ngModel)]="post.description"></div>
+
+                    </div>
+
+                    <button (click)="addPost()" type="button" class="btn btn-primary">Сохранить</button>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+</div>

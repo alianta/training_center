@@ -1,14 +1,15 @@
 export class Post {
-	constructor(){
-		this.id = '';
+    constructor(){
+        this._id = '';
         this.title = '';//название статьи
-        this.pic = '';//картинка
+        this.image = '';//картинка
         this.description = '';//текст статьи
-        this.category='';//категория
-	}
-	public id;
+        this.category=[];//категория
+    }
+    public _id;
     public title;
-    public pic;
+    public image;
     public description;
     public category;
 }
+

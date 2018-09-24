@@ -2,11 +2,8 @@
     max-width: 380px;
     padding: 15px;
     margin: 0 auto;
-
     background-color: #c94155;
-    margin-top: 15px;
     border-radius: 10px;
-    
   }
   .form-signin .form-signin-heading,
   .form-signin .checkbox {
@@ -38,14 +35,20 @@
   .form-signin button{
     background-color: #f9c393;
     border-color: #f9c393;
-    color: black;
+    color: #3C3D47;
+    font-weight: 600;
   }
   .login-block-header{
     white-space: nowrap;
     text-align: center;
-    color:black;
+    color: white;
   }
   .company-name{
     text-align: center;
     color:white;
+    font-weight: 800;
+  }
+  .window{
+    height: 100vh;
+    background-color: #f9c393;
   }
